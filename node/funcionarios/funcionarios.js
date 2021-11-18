@@ -1,0 +1,20 @@
+const url = 'http://files.cod3r.com.br/curso-js/funcionarios.json'
+const axios = require('axios')// axios e um cliente para fazer requisiçoes http. ECMSP NOVO
+                                // PEGAR ALGUM DADO DE UM SERVIDOR EXTERNO
+axios.get(url).then(response =>{
+    const funcionarios = response.data;
+    console.log(funcionarios);
+} )                                
+
+                        //RESUMO DA AULAR 
+
+// JSON - ARQUIVO DESCRITOR DE PROJETO EM NODE
+// NPM INIT -Y COMEÇAR UM ARQUIVO JSON COM SIM PARA TODAS PERGUNTAS
+// NODE_MODULES PODE SER INSTALADO NA PASTA DO PROJETO, OU NA PASTA GERAL
+// NPM I --SAVE AXIOS - ARQUIVO PARA SALVAR AS DEPENDENCIAS DO PROJETO
+// "^0.21.4" MAJOR/MINOR/FIX ^SO MUDA MINOR , ~SO MUDA FIX E SEM NADA É AQUELA VERSAO ESPECIFICA
+// NPM INSTALL --SAVE-DEV AXIOS@0.17.1 -E DEPENDENCIA SO E NECESSARIA EM DESENVOLVIMENTO, OU SEJA, AQUELA VERSAO EM DESENVOLVIMTO, -E EXATAMENTE
+// PACKEGE.LOCK.JSON - E O ARQUIVO QUE VAI PRO REPOSITORIO, DESCREVE DE FORMA MAIS PRECISA EXATAMENTE A VERSAO QUE FOI BAIXA, OU SEJA, ELE GARANTE A VERSAO EM CASO DE MUITOS DEVS
+// TAMBEM GARANTE A INTEGRIDADE E OS PACOTES
+// ACESSAR ARQUIVO : files.cod3r.com.br/curso-js/funcionarios.json
+
